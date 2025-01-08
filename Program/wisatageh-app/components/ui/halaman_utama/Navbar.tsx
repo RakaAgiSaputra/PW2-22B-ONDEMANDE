@@ -4,14 +4,14 @@ import Link from "next/link";
 const Navbar = () => {
     return (
       <>
-        <nav className="flex justify-between gap-5 items-center px-20 pt-10  border border-e-2 border-blue-500 p-2">
-          <div className="border border-e-2 p-2">
+        <nav className="flex justify-between gap-5 items-center px-20 pt-10 pb-5 border border-b-2 p-2 shadow-custom">
+          <div className="p-2">
             <Link href={""} className="text-2xl font-bold">
               WisataGeh
             </Link>
           </div>
-          <div className="border border-e-2 p-2">
-            <ul className="flex gap-4">
+          <div className="p-2">
+            <ul className="flex gap-8">
               <li>
                 <Link className="font-light hover:font-bold" href={""}>
                   Home
@@ -39,9 +39,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="border border-e-2 p-2 bg-red-400 rounded-lg">
+          <div className="p-2 bg-primaryColor rounded-xl">
             <button>
-              <img src="assets\icons\ic_profile.png" width={30}/>
+              <img src="assets\icons\ic_profile.png" width={20}/>
             </button>
           </div>
         </nav>
