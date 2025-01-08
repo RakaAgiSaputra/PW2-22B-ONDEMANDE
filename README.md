@@ -30,7 +30,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
    cd PW2-22B-ONDEMANDE/Program/wisatageh-app
    ```
 
-2. **Instal Node Modules**
+2. **Instal package npm**
    Pastikan menginstal **Node.js** dan **npm** atau **yarn**.
    ```bash
    npm install
