@@ -26,24 +26,20 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/username/WisataGeh.git
-   cd WisataGeh
+   git clone https://github.com/RakaAgiSaputra/PW2-22B-ONDEMANDE.git
+   cd PW2-22B-ONDEMANDE/Program/wisatageh-app
    ```
 
-2. **Instal Dependencies**
-   Pastikan Anda telah menginstal **Node.js** dan **npm** atau **yarn**.
+2. **Instal Node Modules**
+   Pastikan menginstal **Node.js** dan **npm** atau **yarn**.
    ```bash
    npm install
-   # atau
-   yarn install
    ```
 
 
 4. **Menjalankan Server Development**
    ```bash
    npm run dev
-   # atau
-   yarn dev
    ```
    Akses aplikasi di `http://localhost:3000`.
 
