@@ -52,7 +52,7 @@ Berikut adalah struktur direktori utama dari WisataGeh:
 PW2-22B-ONDEMANDE/
 ├── Dokumentasi/
 │   ├── Raka Agi Saputra/
-│   ├── Zani Eko Fitrianti/
+│   ├── Zani Eko Fitrianto/
 │   ├── Aqgit Ariya Kusuma/
 │   └── Noted.txt
 ├── Program/
