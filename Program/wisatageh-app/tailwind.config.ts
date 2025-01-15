@@ -16,6 +16,7 @@ export default {
       },
       height: {
         "88vh": "88vh",
+        "100vh": "100vh",
       },
     },
   },
