@@ -7,7 +7,6 @@ import { Footer } from "@/components/halaman_utama/Footer";
 export default function HomePage() {
   return (
     <>
-      
       <CallToAction/>
       <Achievement/>
       <InterestingWisata/>
