@@ -44,7 +44,7 @@ export default function PaketWisata() {
         WisataGeh Menawarkan paket yang sesuai dan wisata yang seru
       </p>
 
-      <div className="grid grid-cols-2 gap-8 ">
+      <div className="grid grid-cols-2 gap-8 text-white">
         {packages.map((travelPackage) => (
           <div
             key={travelPackage.id}
@@ -55,7 +55,7 @@ export default function PaketWisata() {
               <h2 className="text-xl font-semibold ml-2">{travelPackage.title}</h2>
             </div>
             <p className="text-white">{travelPackage.description}</p>
-            <div className="mt-4 flex items-center justify-between cursor-pointer">
+            <div className="mt-4 text-white flex items-center justify-between cursor-pointer">
                 <span className='mr-2 font-bold'>Pelajari Lebih Lanjut</span>
                 <FontAwesomeIcon icon={faChevronRight} />
             </div>

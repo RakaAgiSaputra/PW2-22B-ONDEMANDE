@@ -9,7 +9,7 @@ interface props {
 
 export function CardTestimoni(props: props) {
   return (
-    <div className="flex p-8 gap-3 bg-gray-400 w-1/3 rounded-xl">
+    <div className="flex p-8 gap-3 bg-gray-300 w-1/3 rounded-xl">
       <div className="bg-red-400 w-1/2 rounded-xl">
         <Image
           src={props.image}
