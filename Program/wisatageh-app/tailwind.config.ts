@@ -12,7 +12,10 @@ export default {
         primaryColor: "#D766FF",
       },
       boxShadow: {
-        custom: '0 0 4px rgba(0,0,0,0.25)'
+        custom: "0 0 4px rgba(0,0,0,0.25)",
+      },
+      height: {
+        "88vh": "88vh",
       },
     },
   },
