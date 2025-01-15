@@ -1,17 +1,18 @@
 import Achievement from "@/components/halaman_utama/Achievement";
-import Navbar from "@/components/halaman_utama/Navbar";
-import Image from "next/image";
-import {ButtonProps} from "@/components/ui/Button"
 import CallToAction from "@/components/halaman_utama/CallToAction";
+import { TestimoniUsers } from "@/components/halaman_utama/TestimoniUsers";
 import InterestingWisata from "@/components/halaman_utama/InterestingWisata";
+import { Footer } from "@/components/halaman_utama/Footer";
 
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      
       <CallToAction/>
       <Achievement/>
       <InterestingWisata/>
+      <TestimoniUsers/>
+      <Footer/>
     </>
   );
 }
