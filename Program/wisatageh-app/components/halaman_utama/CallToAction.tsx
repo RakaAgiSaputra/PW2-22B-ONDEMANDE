@@ -3,8 +3,6 @@ import { ButtonProps } from "../ui/Button";
 import { ButtonJadwal } from "../ui/ButtonJadwal";
 
 function CallToAction() {
-  const titleCta =
-    "Nikmati Keindahan Permata Wisata Tersembunyi Lampung Hari Ini";
   const paragraphCta =
     "Jelajahi pantai yang masih alami, lanskap yang tenang, dan landmark budaya di Lampung untuk pengalaman perjalanan yang tak terlupakan.";
   const jadwalHari = "Senin hingga Jumat, Jam 8 Pagi - 12 Malam";
@@ -13,7 +11,12 @@ function CallToAction() {
   return (
     <section className="px-20 flex h-88vh mt-20 sm:flex-col md:flex-row gap-x-8">
       <div>
-        <h1 className="text-4xl font-bold pb-4">{titleCta}</h1>
+        <h1 className="text-5xl font-bold pb-4">
+          Nikmati Keindahan Permata{" "}
+          <span className="text-primaryColor">
+            Wisata Tersembunyi Lampung Hari Ini
+          </span>
+        </h1>
         <p className="pb-12 text-2xl">{paragraphCta}</p>
         <div className="flex gap-x-10 pb-6">
           <ButtonProps

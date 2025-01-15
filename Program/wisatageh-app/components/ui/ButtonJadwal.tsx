@@ -12,7 +12,7 @@ export function ButtonJadwal(props: PropsPage) {
     >
       {/* // {props.words} */}
       <div className="w-1/3">
-        <Image src={props.icon} width={200} height={200} alt="ic_wa" className="w-24" />
+        <Image src={props.icon} width={500} height={500} alt="ic_wa" className="w-24" />
       </div>
       <div>
         <h1 className="w-3/4">{props.text}</h1>
