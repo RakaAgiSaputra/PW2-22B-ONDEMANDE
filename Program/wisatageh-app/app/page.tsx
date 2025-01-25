@@ -5,7 +5,7 @@ import InterestingWisata from "@/components/halaman_utama/InterestingWisata";
 import { Footer } from "@/components/halaman_utama/Footer";
 import PaketWisata from "@/components/halaman_utama/PaketWisata";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <>
       <CallToAction/>
