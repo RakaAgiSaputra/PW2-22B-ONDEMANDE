@@ -2,6 +2,7 @@
 
 import { PrismaClient } from "@prisma/client";
 import { revalidatePath } from "next/cache";
+import { Property } from "./types";
 
 const prisma = new PrismaClient();
 
@@ -41,12 +42,12 @@ export async function addWishlist(data: FormData) {
   }
 }
 
-export async function getallData() {
+export async function getallData(): Promise<Property[]> {
   try {
     const properties = await prisma.wishlist.findMany({
       select: {
         id: true,
-        destinations: true, // Properti ini harus ada di model Prisma
+        destinations: true,
         address: true,
         ratings: true,
         plan: true,
@@ -59,6 +60,7 @@ export async function getallData() {
     return [];
   }
 }
+
 
 export async function deleteProperty({
   id,

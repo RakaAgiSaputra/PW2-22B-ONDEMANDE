@@ -1,3 +1,0 @@
-1. Membuat section Achievement di homepage
-2. Membuat section Paket Wisata di Homepage
-3. Membuat page Testimonials
