@@ -6,7 +6,6 @@ function CallToAction() {
   const paragraphCta =
     "Jelajahi pantai yang masih alami, lanskap yang tenang, dan landmark budaya di Lampung untuk pengalaman perjalanan yang tak terlupakan.";
   const jadwalHari = "Senin hingga Jumat, Jam 8 Pagi - 12 Malam";
-  const noHp = "+621234567894";
 
   return (
     <section className="px-20 flex h-88vh mt-20 sm:flex-col md:flex-row gap-x-8">

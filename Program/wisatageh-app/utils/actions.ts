@@ -30,16 +30,20 @@ export async function addWishlist(data: FormData) {
     // Kembalikan pesan sukses
     revalidatePath("/");
     return { success: true, message: "Wishlist has been added successfully!" };
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error adding wishlist:", error);
     return {
       success: false,
-      message: error.message || "Failed to add wishlist.",
+      message: error || "Failed to add wishlist.",
     };
   } finally {
     await prisma.$disconnect();
   }
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 export async function getallData() {
   try {
     const properties = await prisma.wishlist.findMany({
@@ -58,7 +62,6 @@ export async function getallData() {
     return [];
   }
 }
-
 
 export async function deleteProperty({
   id,

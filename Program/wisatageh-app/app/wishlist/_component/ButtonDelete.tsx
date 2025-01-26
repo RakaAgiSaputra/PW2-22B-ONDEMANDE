@@ -1,9 +1,8 @@
 "use client"; // Pastikan komponen ini dijalankan di client-side
 
-import { useState } from "react";
 import { Button } from "@/components/ui/Button";
-import { MdDelete } from "react-icons/md";
 import { deleteProperty } from "@/utils/actions"; // Pastikan path sesuai
+import { useState } from "react";
 import Swal from "sweetalert2"; // Impor SweetAlert2
 
 interface ButtonDeleteItemProps {

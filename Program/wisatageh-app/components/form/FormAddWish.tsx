@@ -1,11 +1,11 @@
 "use client";
 
+import { addWishlist } from "@/utils/actions"; // Import Server Action
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { Button } from "../ui/Button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
-import { Button } from "../ui/Button";
-import { addWishlist } from "@/utils/actions"; // Import Server Action
 
 function FormAddWish() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,21 +20,30 @@ function FormAddWish() {
       // Panggil Server Action dan tangkap pesan status
       const result = await addWishlist(formData);
 
-      console.log("Server response:", result); // Tambahkan logging untuk debugging
+      console.log("Server response:", result); // Tambahkan logging untuk debuggin
+
+      const messageSuccess =
+        typeof result.message === "string"
+          ? result.message
+          : JSON.stringify(result.message);
+      const messageError =
+        typeof result.message === "string"
+          ? result.message
+          : JSON.stringify(result.message); // Pesan error (pastikan selalu string)
 
       // Tampilkan SweetAlert berdasarkan hasil
       if (result.success) {
         Swal.fire({
           icon: "success",
           title: "Success",
-          text: result.message,
+          text: messageSuccess,
           confirmButtonColor: "#6B46C1", // Warna tombol
         });
       } else {
         Swal.fire({
           icon: "error",
           title: "Error",
-          text: result.message,
+          text: messageError,
           confirmButtonColor: "#E53E3E", // Warna tombol
         });
       }
