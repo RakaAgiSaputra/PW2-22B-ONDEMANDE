@@ -1,3 +1,8 @@
+# Link Deploy Ke Vercel
+```bash
+https://pw-2-22-b-ondemande-7bx2.vercel.app/
+```
+
 # ⚙️ GET STARTED
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
 
