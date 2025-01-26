@@ -40,6 +40,8 @@ export async function addWishlist(data: FormData) {
     await prisma.$disconnect();
   }
 }
+
+
 export async function getallData() {
   try {
     const properties = await prisma.wishlist.findMany({
