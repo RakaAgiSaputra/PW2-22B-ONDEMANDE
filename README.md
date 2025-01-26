@@ -1,27 +1,4 @@
-# WisataGeh 🌍
-
-WisataGeh adalah platform wisata yang dirancang untuk menawarkan paket wisata yang sesuai dan pengalaman perjalanan yang seru. Proyek ini dibangun menggunakan **Next.js**, **Tailwind CSS**, **Daisy UI**, dan **Prisma** untuk memberikan pengalaman pengguna yang modern, cepat, dan responsif.
-
----
-
-## ✨ Fitur Utama
-- **Pencarian Paket Wisata:** Cari paket wisata yang sesuai dengan preferensi Anda.
-- **Detail Paket Wisata:** Informasi lengkap tentang destinasi, fasilitas, dan harga.
-- **Desain Responsif:** Tampilan yang optimal di berbagai perangkat.
-- **Antarmuka Modern:** Dibangun dengan Tailwind CSS dan Daisy UI untuk desain yang bersih dan profesional.
-- **Manajemen Data yang Efisien:** Didukung oleh Prisma sebagai ORM.
-
----
-
-## 🔧 Teknologi yang Digunakan
-- **[Next.js](https://nextjs.org/):** Framework React untuk aplikasi web yang cepat dan scalable.
-- **[Tailwind CSS](https://tailwindcss.com/):** Library CSS untuk desain UI yang fleksibel.
-- **[Daisy UI](https://daisyui.com/):** Komponen UI siap pakai yang terintegrasi dengan Tailwind CSS.
-- **[Prisma](https://www.prisma.io/):** ORM untuk manajemen database yang mudah dan aman.
-
----
-
-## ⚙️ Instalasi dan Menjalankan Proyek
+# ⚙️ GET STARTED
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
 
 1. **Clone Repository**
@@ -35,7 +12,11 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
    ```bash
    npm install
    ```
-
+3. **Generate prisma client to node modules**
+   Pastikan menginstal no **2**.
+   ```bash
+   npx prisma generate
+   ```
 
 4. **Menjalankan Server Development**
    ```bash
@@ -43,6 +24,19 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
    ```
    Akses aplikasi di `http://localhost:3000`.
 
+# WisataGeh 🌍
+
+WisataGeh adalah platform wisata yang dirancang untuk menawarkan paket wisata yang sesuai dan pengalaman perjalanan yang seru. Proyek ini dibangun menggunakan **Next.js**, **Tailwind CSS**, **Daisy UI**, dan **Prisma** untuk memberikan pengalaman pengguna yang modern, cepat, dan responsif.
+
+---
+
+## ✨ Fitur Utama
+- **Pencarian Paket Wisata:** Cari paket wisata yang sesuai dengan preferensi Anda.
+- **Detail Paket Wisata:** Informasi lengkap tentang destinasi, fasilitas, dan harga.
+- **Desain Responsif:** Tampilan yang optimal di berbagai perangkat.
+- **Antarmuka Modern:** Dibangun dengan Tailwind CSS dan Daisy UI untuk desain yang bersih dan profesional.
+- **Manajemen Data yang Efisien:** Didukung oleh Prisma sebagai ORM.
+- 
 ---
 
 ## 💃 Struktur Proyek
@@ -59,6 +53,10 @@ PW2-22B-ONDEMANDE/
 │   ├── wisatageh-app/
 │   │   ├── app/
 │   │   └── public/
+│   │   └── prisma/
+│   │   └── utils/
+│   │   └── components/
+│   │   └── .env
 └── README.md
 ```
 
