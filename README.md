@@ -1,4 +1,3 @@
----
 # ⚙️ GET STARTED
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
 
@@ -19,8 +18,6 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
    npm run dev
    ```
    Akses aplikasi di `http://localhost:3000`.
-
----
 
 # WisataGeh 🌍
 
