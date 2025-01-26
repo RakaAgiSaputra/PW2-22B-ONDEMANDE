@@ -12,6 +12,11 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
    ```bash
    npm install
    ```
+3. **Generate prisma client to node modules**
+   Pastikan menginstal no **2**.
+   ```bash
+   npx prisma generate
+   ```
 
 4. **Menjalankan Server Development**
    ```bash
