@@ -68,7 +68,7 @@ export default function PaketWisata() {
   ];
 
   return (
-    <div className="h-100vh px-20 flex flex-col justify-center items-center">
+    <div className="grid grid-cols-1 justify-center items-center px-20 m-12">
       <h1 className="text-3xl font-bold text-center mb-8">
         Temukan Yang Terbaik di Lampung bersama WisataGeh
       </h1>
@@ -76,11 +76,11 @@ export default function PaketWisata() {
         WisataGeh Menawarkan paket yang sesuai dan wisata yang seru
       </p>
 
-      <div className="grid grid-cols-2 gap-8 text-white">
+      <div className="grid grid-cols-2 gap-5 text-white ">
         {packages.map((travelPackage) => (
           <div
             key={travelPackage.id}
-            className={`bg-primaryColor rounded-lg shadow- lg p-6 transition-transform transform hover:scale-105`}
+            className={`bg-primaryColor rounded-lg shadow- lg p-6 transition-transform transform hover:scale-105 w-3/4`}
           >
             <div className="flex items-center mb-4">
               {travelPackage.icon}
@@ -91,7 +91,7 @@ export default function PaketWisata() {
             <p className="text-white">{travelPackage.description}</p>
             <div className="mt-4 text-white flex items-center justify-between cursor-pointer">
               <span className="mr-2 font-bold">Pelajari Lebih Lanjut</span>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <FontAwesomeIcon icon={faChevronRight} className="w-12 h-12"/>
             </div>
           </div>
         ))}
