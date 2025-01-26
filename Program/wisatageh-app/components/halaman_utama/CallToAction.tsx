@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ButtonProps } from "../ui/Button";
 import { ButtonJadwal } from "../ui/ButtonJadwal";
+import { ButtonProps } from "./ButtonProps";
 
 function CallToAction() {
   const paragraphCta =
