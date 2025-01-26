@@ -10,9 +10,10 @@ import { MdDelete } from "react-icons/md";
 import ButtonDeleteItem from "./ButtonDelete";
 
 import { getallData } from "@/utils/actions";
+import { Property } from "@/utils/types";
 
 export async function TableWishList() {
-  const properties = await getallData();
+  const properties: Property[] = await getallData();
 
   if (properties.length === 0) {
     return (
@@ -33,7 +34,7 @@ export async function TableWishList() {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {properties.map((properties, index) => (
+        {properties.map((properties: Property, index: number) => (
           <TableRow key={index}>
             <TableCell className="font-medium">
               {properties.destinations}
